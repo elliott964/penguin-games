@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Penguin Games</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: radial-gradient(circle at 50% 0%, #1b2a4a 0%, #0b1020 70%);
+    color: #eaf0ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 64px;
+  }
+  h1 {
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  .sub { color: #9fb0d0; margin: 0 0 40px; font-size: 1.05rem; }
+  .grid {
+    display: grid;
+    gap: 24px;
+    width: 100%;
+    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+  a.card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 18px;
+    padding: 28px 24px;
+    transition: transform .15s ease, border-color .15s ease, background .15s ease;
+  }
+  a.card:hover {
+    transform: translateY(-4px);
+    border-color: #5f8bff;
+    background: rgba(95,139,255,0.14);
+  }
+  .card .emoji { font-size: 2.4rem; display: block; margin-bottom: 14px; }
+  .card h2 { margin: 0 0 6px; font-size: 1.35rem; }
+  .card p { margin: 0; color: #9fb0d0; font-size: 0.95rem; }
+  footer { margin-top: 48px; color: #62718f; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+  <h1>Penguin Games</h1>
+  <p class="sub">Pick a game and play — no installs, no downloads.</p>
+  <div class="grid">
+    <a class="card" href="subway-surfers/">
+      <span class="emoji">🛹</span>
+      <h2>Subway Surfers</h2>
+      <p>Dash through the trains, dodge the guards and chase the high score.</p>
+    </a>
+    <a class="card" href="drive-mad/">
+      <span class="emoji">🚗</span>
+      <h2>Drive Mad</h2>
+      <p>Physics puzzles on wheels — get the car safely to the finish.</p>
+    </a>
+  </div>
+  <footer>Hosted with GitHub Pages</footer>
+</body>
+</html>
